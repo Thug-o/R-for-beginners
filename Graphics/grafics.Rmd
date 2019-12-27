@@ -6,7 +6,7 @@ institute: "Эдийн засаг, эконометрикс, статистик"
 date: "`r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    chakra: libs/remark-latest.min.js
+    chakra: libs
     css: ['default', 'metropolis', 'metropolis-fonts']
     nature:
       highlightStyle: github
@@ -113,7 +113,6 @@ theme_axes <- theme_void() + theme(
 theme_set(theme_gray(base_size = 20))
 ```
 ---
-
 
 ```{r,eval=FALSE,message=FALSE,warning=FALSE,echo=TRUE}
 
