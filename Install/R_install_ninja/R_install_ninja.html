@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>R суулгах нь</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="О.Лхагвасүрэн" />
+    <meta name="date" content="2019-12-26" />
+    <link href="R_install_ninja_files/remark-css/default.css" rel="stylesheet" />
+    <link href="R_install_ninja_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="R_install_ninja_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="my-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# R суулгах нь
+## R программчлалын үндэс
+### О.Лхагвасүрэн
+### Эдийн засаг, эконометрикс, статистик
+### 2019-12-26
+
+---
+
+
+
+
+# WHO AM I 
+
+.pull-left[ 
+- &lt;small&gt;2008-2012 БАКАЛАВР, МУИС-ЭЗС, ЭДИЙН ЗАСГИЙН ОНОЛ&lt;/small&gt;
+- &lt;small&gt;2015-2018 МАГИСТР, САКАРЯА, ЭКОНОМЕТРИКЧ ЭДИЙН ЗАСАГЧ&lt;/small&gt;
+- &lt;small&gt;ГРАНДЛАЙН БДК, МАКРО ШИНЖЭЭЧ&lt;/small&gt;
+- &lt;small&gt;ХАСБАНК, ЭУГ, ЭРСДЭЛИЙН ШИНЖЭЭЧ&lt;/small&gt;
+- &lt;small&gt;ГОЛОМТ БАНК, ЭУГ, МАКРО ШИНЖЭЭЧ&lt;/small&gt;
+- &lt;small&gt;МБХОЛБООНЫ СУДЛААЧДЫН ЗӨВЛӨЛИЙН ТЭРГҮҮН&lt;/small&gt;
+- &lt;small&gt;IKON.MN – НИЙТЛЭЛЧ&lt;/small&gt;
+- &lt;small&gt;“ЭДИЙН ЗАСАГЧ”, “ЭКОНОМЕТРИК СУДАЛЦГААЯ” АДМИН&lt;/small&gt;
+]
+
+.pull-right[
+![](pictures/Picture1.png)
+]
+
+---
+
+# WHO AM I
+
+.center[![](pictures/Picture2.png)]
+
+---
+
+# Яагаад бид програмын хэл сурах хэрэгтэй вэ?
+
+.pull-left[
+  .center[![](pictures/Picture3.jpg)]]
+.pull-right[
+* Хөгжингүй орнуудаас хөгжиж буй орнууд руу ажилчид шилжинэ.
+* Хэрвээ мэргэжилдээ ямар нэгэн диверсифкаци хийхгүй бол машин таныг орлох болно.
+]
+
+---
+
+# Бид програмын хэл сурвал ямар давуу талтай болох вэ? 
+
+.pull-left[![](pictures/Picture4.png)]
+
+.pull-right[
+- Гартаа та хоёр том зэвсэгтэй болно.
+- цалингийн хувьд хүссэн цалингаараа ажиллаж чадна.
+- одоогийн дата аналистууд бидний салбарыг нарийн ойлгодоггүй.
+- ирээдүйд бий болох ажлын байрны хувьд тэсч үлдэх боломжтой.
+- одоогоор ирээдүйд ч энэ зүйлс тренд болсоор байна.
+]
+
+---
+# Top programming language
+
+.pull-left[![](pictures/Picture5.png)]
+.pull-right[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Program names &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Salary &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Python &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 166,379 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; JavaScript &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 110,000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Java &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 97,000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; R &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 91,470 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Swift &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 81,000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Golana &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 120,000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; C# &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 78,000 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; C++ &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 116,551 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; SCALA &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 117,369 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; kotlin &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; 131,250 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+---
+
+# WHY IS R Studio
+
+.pull-left[![](pictures/Capture.JPG)
+![](pictures/Picture6.png)]
+
+.pull-right[
+Ажлын байр болон компани
+
+- Data analyst
+- Data scientist
+- Financial analyst
+- Quantitative analyst
+
+**91,470$ буюу 240 сая ₮**
+]
+
+---
+# What is r studio
+
+
+.pull-left[
+R хэл нь C++ бичигдсэн.
+
+* статистик тооцоолол 
+* өгөгдлийн шинжилгээ
+* Эконометрикийн шинжилгээ
+* Тоон шинжилгээ
+
+R хэл нь өгөгдлийн шинжилгээнд (бас machine learning) хамгийн өргөн ашиглагддаг хэл.  
+
+
+IDE-с гаргасан үнэгүй, нээлттэй шинжилгээний программ юм.
+]
+
+--
+
+| Онцлог |  Ашиглалт|
+|:------------|:-------|
+|- Статистик болон дата анализ-д нийтлэг ашигладаг|- Эконометрик загвар, өгөгдлийн шинжилгээ хийх санхүүгийн салбар|
+|- Нээлттэй, үнэгүй source| - Телекомын салбар|
+|- Ашиглахад асар их нөөц бололцоотой | - Менежмент   
+|                                       | - Биологийн салбар|
+
+
+---
+# R &amp; R studio
+
+https://www.r-project.org/
+
+Эхлээд R –г суулгах шаардлагатай. Харин дараа нь Rstudio суулгах хэрэгтэй.
+
+https://www.rstudio.com/products/rstudio/download/
+
+Дээрх линкээр орж Windows, Mac, Ubuntu зэрэг аль үйлдлийн систем хэрэглэж байна. Түүнээсээ хамааран сонгох хэрэгтэй. 
+
+Суулгасны дараа цэснүүдтэй танилцах нь 
+
+---
+# Ажлын цонхтой танилцах
+
+![](pictures/Picture8.png)
+
+---
+class: inverse,center,middle
+# Анхаарал хандуулсан явдалд баярлалаа 
+
+.center[![](pictures/thanks.JPG)]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+<style>
+.logo {
+  background-image: url(pictures/logo.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  width: 60px;
+  height: 78px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

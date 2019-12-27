@@ -1,0 +1,25 @@
+.title-slide {
+  background-image: url(bgc.jpg);
+}
+
+slides > slide.title-slide hgroup h1 {
+  font-weight: bold;
+  font-size: 50pt;
+  color: black;
+  bottom: 50%;
+}
+
+slides > slide.title-slide p {
+  font-size: 20pt;
+  color: white;
+}
+
+h2 {
+  color: Black;
+}
+
+body {
+  background-color: #f69680;
+  color: black;
+  font-weight: 200;
+}
